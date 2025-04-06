@@ -1,4 +1,4 @@
-# XSS Bank
+# React XSS Bank
 
 Ez az alkalmazás háromféle XSS sebezhetőséget demonstrál:
 - **Reflected XSS:** A keresőoldalon a felhasználó URL paraméterét a `dangerouslySetInnerHTML` segítségével jelenítjük meg.
@@ -9,6 +9,6 @@ Ez az alkalmazás háromféle XSS sebezhetőséget demonstrál:
 
 1. Node.js telepítése
 2. git clone
-3. cd xss
+3. cd react-xss-bank
 4. npm install
 5. npm start  

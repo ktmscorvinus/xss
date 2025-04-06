@@ -9,6 +9,6 @@ Ez az alkalmazás háromféle XSS sebezhetőséget demonstrál:
 
 1. Node.js telepítése
 2. git clone
-3. cd xss-bank
+3. cd xss
 4. npm install
 5. npm start  

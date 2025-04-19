@@ -12,14 +12,14 @@ const funds = [
 
 export default function HashAndRadioFilteredFunds() {
   const [selectedType, setSelectedType] = useState("");
-  const unsafeRef = useRef(null); // ⚠️ For unsafe hash display
+  const unsafeRef = useRef(null); 
 
   useEffect(() => {
     const updateFromHash = () => {
       const hash = decodeURIComponent(window.location.hash.replace("#", ""));
       setSelectedType(hash);
 
-      // ⚠️ INSECURE: Injecting directly into the DOM
+      // Veszélyes DOM-ba injektálása a hash-nek
       if (unsafeRef.current) {
         unsafeRef.current.innerHTML = hash;
       }
